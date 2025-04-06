@@ -9,8 +9,13 @@
   <title>HTML Portfolio</title>
 
   <style>
-    input, textarea {
+    input, select, textarea {
       display: block;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
@@ -27,7 +32,7 @@
 
 <h1>Hello World Corp</h1>
 <p>A semantic HTML demo site.</p>
-
+<img src="https://placehold.co/600x400" alt="">
 
 
 <!-- FEATURES -->
@@ -67,16 +72,26 @@
 <form action="" method="post">
   <div>
     <label for="name">Name</label>
-    <input id="name" type="text" name="name" required>
+    <input id="name" type="text" name="name" placeholder="John Smith" required>
   </div>
 
   <div>
     <label for="email">Email</label>
-    <input id="email" type="email" name="email" required>
+    <input id="email" type="email" name="email" placeholder="john@example.com" required>
+  </div>
+
+  <div>
+    <label for="department">Department</label>
+    <select name="department" id="department">
+      <option value="sales">Sales</option>
+      <option value="tech">Tech Support</option>
+      <option value="other">Other</option>
+    </select>
   </div>
 
   <label for="message">Message</label>
   <textarea id="message" name="message" required></textarea>
+
   <button>Submit</button>
 </form>
 
@@ -84,6 +99,13 @@
 
 <!-- FOOTER -->
 <footer>
+  <ul>
+    <li><a href="https://www.facebook.com/" target="_blank">Facebook</a></li>
+    <li><a href="https://x.com/" target="_blank">X</a></li>
+    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+    <li><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://www.youtube.com/" target="_blank">YouTube</a></li>
+  </ul>
   <small>&copy; 2024-2025 Javier Alvarado.</small>
   <small>Made with ⚡️ on Earth.</small>
 </footer>
